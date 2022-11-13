@@ -1,0 +1,171 @@
+.Banner {
+    height: 50vh;
+    position: relative;
+    margin-bottom: 18rem;
+    @include from(medium) {
+        height: 80vh;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    @include from(large) {
+        height: 100vh;
+    }
+
+    @include from(x-large) {
+        height: 90vh;
+    }
+    
+    
+    &__img {
+        height: 100%;
+        object-fit: cover;
+
+        @include from(medium) {
+            height: auto;
+        }
+    }
+    
+    &__container {
+        background-image: linear-gradient(0deg, rgba(23,24,28,1) 0%, rgba(23,24,28,0.40) 50%, rgba(23,24,28,1) 100%);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right:0;
+        position: absolute;
+        top: 0;
+
+        @include from(large) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+
+        @include from(medium) {
+            // width: 80%;
+            transform: translateY(-100%) translateX(-50%);
+        }
+
+        @include from(large) {
+            position: static;
+            transform: translateY(10%) translateX(0);
+        }
+
+        @include from(x-large) {
+            // width: 50%;
+        }
+    }
+
+    &__title {
+        width: auto;
+        margin: auto;
+        height: 100px;
+        filter:invert(1);
+
+        @include from(large) {
+            height: 150px;
+            margin-left: 0;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__description {
+        display: none;
+        width: 40%;
+        @include from(large) {
+            display: block;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__categorys {
+        display: flex;
+        justify-content: center;
+        gap:5px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        @include from(large) {
+            justify-content: flex-start;
+            margin-top: 0;
+            margin-bottom: 2.5rem;
+        }
+    }
+    
+    &__category {
+        padding: .8rem 1.5rem;
+        background-color: $fondosecond;
+        border-radius: 20px;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem;
+        @include from(large) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__play {
+        border-radius: 50%;
+        width: 39px;
+        height: 39px;
+        color: $fondofirst;
+        background-image: linear-gradient(90deg, rgba(250,184,24,1) 0%, rgba(255,133,51,1) 50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__moreinfo,
+    &__addlist {
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        border:2px solid $tipografiaWhite;
+        background: $fondofirst;
+        padding: .8rem 1.8rem;
+        font-weight: map-get($fonts, bold );
+        font-size: 1.4rem;
+
+        span {
+            margin-right: .8rem;
+        }
+
+        &:hover {
+            background-color: $fondosecond;
+        }
+    }
+
+    &__paginacion {
+        display: flex;
+        justify-content: center;
+        gap:.5rem;
+        margin-top: 2rem;
+
+        @include from(large){
+            margin-top: 4rem;
+        }
+    }
+
+    &__pagina {
+        width: 10px;
+        height: 10px;
+        background-color: $tipografiaWhite;
+        opacity: .6;
+        border-radius: 50%;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}

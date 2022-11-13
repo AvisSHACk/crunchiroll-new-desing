@@ -1,0 +1,42 @@
+.Footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    opacity: .4;
+    
+    @include from(medium) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    &__right {
+        @include from(large) {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+
+        @include from(medium) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+    &__copy {
+        margin-bottom: 1rem;
+        text-align: center;
+        @include from(medium) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__navitem {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}

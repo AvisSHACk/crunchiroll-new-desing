@@ -1,0 +1,54 @@
+.Menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $fondofirst;
+    color: $tipografiaGray;
+    @include from(medium){
+        position: static;
+        background: none;
+        width: auto;
+    }
+    &__container {
+        display: flex;
+        @include from(medium){
+            flex-shrink: 1;
+        }
+    }
+
+    
+    &__item {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        &.active {
+            color: $accentosecond;
+            @include from(medium){
+                color: $tipografiaWhite;
+                opacity: 1;
+            }
+        }
+
+        @include from(medium){
+            flex-direction: row;
+            align-items: center;
+            margin-left: 2rem;
+            flex: initial;
+            opacity: .6;
+        }
+        
+    }
+    
+    &__link {
+        font-size: 1rem;
+        @include from(medium){
+            font-size: 1.4rem;
+            font-weight: map-get($fonts, bold);
+        }
+    }
+}

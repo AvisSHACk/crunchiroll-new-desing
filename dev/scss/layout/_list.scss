@@ -1,0 +1,78 @@
+.List {
+    overflow: hidden;
+    margin-bottom: 3rem;
+    &__header {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+        @include from(medium) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__historial {
+        display: flex;
+        align-items: center;
+        color: $enlaces;
+    }
+
+    &__container {
+        // display: flex;
+        // width: 200%;
+        width: 1000%;
+        // gap: 16px;
+        
+        
+        
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 16px;
+        
+        @include from(small) {
+            width: 600%;
+        }
+
+        @include from(medium) {
+            width: 400%;
+        }
+
+        @include from(large) {
+            width: 300%;
+        }
+
+        @include from(x-large) {
+            width: 200%;
+        }
+        // overflow-x: scroll;
+
+        // @include from(small){
+        //     grid-auto-columns: 40%;
+        // }
+
+        // @include from(medium){
+        //     grid-auto-columns: 30%;
+        // }
+
+        // @include from(large){
+        //     grid-auto-columns: 22%;
+        // }
+
+        &--big {
+            // grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(10, 1fr);
+            @include from(small) {
+                grid-template-columns: repeat(8, 1fr);
+            }
+
+            @include from(medium) {
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            @include from(large) {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+    }
+}

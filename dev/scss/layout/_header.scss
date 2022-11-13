@@ -1,0 +1,24 @@
+.Header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    position: absolute;
+    width: 100%;
+    z-index:1;
+    &__logo {
+        height: 30px;
+        position: relative;
+        top: 4px;
+        @include from(small) {
+            height: 25px;
+        }
+    }
+
+    &__button {
+        margin-left: auto;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+}

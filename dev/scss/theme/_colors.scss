@@ -1,0 +1,37 @@
+$vars:(
+    principal:#17181c,
+    secundariofirst: #414554,
+    secundariosecond: #292b37,
+    secundariothird: #23252b,
+    accentofirst: #FAB818,
+    accentosecond: #ff8533,
+    borderColor:#BEBEBE,
+    enlaces: #2ABDBB,
+    fondofirst: #17181c,
+    fondosecond: #23252b,
+    tipografiaWhite:#f5f5f5,
+    tipografiaGray: #D7D7D7,
+    exito:#3DFF7F,
+    error: #d93636
+);
+
+$principal:map-get($vars, principal);
+$secundariofirst:map-get($vars, secundariofirst);
+$secundariosecond:map-get($vars, secundariosecond);
+$secundariothird: map-get($vars, secundariothird);
+$accentofirst:map-get($vars, accentofirst);
+$accentosecond: map-get($vars, accentosecond);
+$borderColor: map-get($vars, borderColor);
+$enlaces: map-get($vars, enlaces);
+$fondofirst: map-get($vars, fondofirst);
+$fondosecond:map-get($vars, fondosecond);
+$tipografiaWhite:map-get($vars, tipografiaWhite);
+$tipografiaGray:map-get($vars, tipografiaGray);
+$exito:map-get($vars, exito);
+$error:map-get($vars, error);
+
+:root {
+    @each $key, $value in $vars {
+        --#{$key}: #{$value};
+    }
+}

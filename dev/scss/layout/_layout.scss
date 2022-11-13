@@ -1,0 +1,20 @@
+.l-container,
+[class*="l-container--"] {
+    width: 93%;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include from(medium) {
+        grid-template-columns: repeat(12, 1fr);
+    }
+    gap: 16px;
+}
+
+.son {
+    background-color: red;
+}

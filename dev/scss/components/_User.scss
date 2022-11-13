@@ -1,0 +1,28 @@
+.User {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    &__username {
+        display: none;
+
+        @include from(large){
+            display: flex;
+            align-items: center;
+            margin-right: .8rem;
+            font-weight: map-get($fonts, medium);
+        }
+    }
+    &__image {
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid $tipografiaGray;
+        }
+    }
+
+    &__arrow {
+        margin-left: .2rem;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,9 @@
+@mixin var($property, $var) {
+    #{$property} : var(--#{$var});
+}
+
+@mixin from($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
