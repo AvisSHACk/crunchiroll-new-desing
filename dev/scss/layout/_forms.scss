@@ -1,0 +1,32 @@
+.Form {
+    display: flex;
+    border: 2px solid $secundariosecond;
+    border-radius: 12px;
+    &__input,
+    &__search {
+        color: $tipografiaWhite;
+        background-color: $secundariothird;
+    }
+
+    &__input {
+        border-radius: 0 12px 12px 0;
+        width: 100%;
+        padding: 1.4rem 0;
+        font-size: 1.6rem;
+        overflow: hidden;
+
+        @include from(medium) {
+            font-size: 1.8rem;
+            padding: 1.6rem 0;
+        }
+    }
+
+    &__search {
+        overflow: hidden;
+        padding: 0 1.2rem;
+
+        @include from(medium) {
+            padding: 0 1.4rem;
+        }
+    }
+}

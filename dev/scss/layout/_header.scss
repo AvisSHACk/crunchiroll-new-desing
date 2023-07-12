@@ -21,4 +21,8 @@
         display: flex;
         align-items: center;
     }
+
+    &--noabsolute {
+        position: static;
+    }
 }

@@ -12,13 +12,24 @@
         opacity: 1;
         
     }
-    
-    &:hover &__mask {
-        background-color: rgb($fondosecond, .9);
+
+    &--category {
+        border: 2px solid $secundariofirst;
+    }
+
+    &--category:hover &__mask--category {
         padding-left: .8rem;
         padding-right: .8rem;
         padding-top: .3rem;
         padding-bottom: .3rem;
+    }
+    
+    &:hover &__mask {
+        background-color: rgb($fondosecond, .9);
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom:2rem;
+        padding-left: 1.6rem;
     }
     
     &:hover &__minutes,
@@ -28,6 +39,11 @@
     
     &__imagecontainer {
         position: relative;
+    }
+
+    &__image--category {
+        object-fit: cover;
+        height: 100%;
     }
 
     &__title, &__numbercap {
@@ -64,6 +80,14 @@
             flex-wrap: wrap;
             background-color: rgb($fondosecond, .8);
             opacity: 0;
+        }
+
+        &--category {
+            align-items: flex-start;
+            justify-content: flex-end;
+            padding-bottom:1rem;
+            padding-left: 1.2rem;
+            background-image: linear-gradient(0deg, rgba(23,24,28,1) 0%, rgba(23,24,28,0.40) 50%, rgba(23,24,28,1) 100%);
         }
     }
 
@@ -104,11 +128,16 @@
         // bottom: 0;
     }
 
-    &__minutes {
+    &__minutes,
+    &__categoryname {
         margin-bottom: .5rem;
         opacity: 0;
         transition: all .3s;
         font-weight: map-get($fonts, bold);
+    }
+
+    &__categoryname {
+        opacity: 1;
     }
 
     &__bar {

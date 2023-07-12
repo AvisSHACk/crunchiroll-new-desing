@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <header class="Header Header--noabsolute">
+        <div class="Header__container l-container">
+            <a href="#">
+                <img clasS="Header__logo" src="img/logo.png" alt="crunchyroll-logo">
+            </a>
+            <nav class="Menu">
+                <ul class="Menu__container">
+                    <li class="Menu__item active"><span class="material-icons-sharp">home</span><a href="#" class="Menu__link">INICIO</a></li>
+                    <li class="Menu__item"><span class="material-icons-sharp">search</span><a href="#" class="Menu__link">BUSQUEDAD</a></li>
+                    <li class="Menu__item"><span class="material-icons-sharp">playlist_play</span><a href="#" class="Menu__link">MIS LISTAS</a></li>
+                </ul>
+            </nav>
+            <div class="User">
+                <p class="User__username"><span class="material-icons-sharp">notifications</span> usuario</p>
+                <div class="User__image">
+                    <img src="img/user.jpg" alt="">
+                </div>
+                <span class="User__arrow material-icons-sharp">expand_more</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="l-container">
+            <form action="" class="Form">
+                <button class="Form__search">
+                    <span class="material-icons-sharp">
+                        search
+                    </span>
+                </button>
+                <input class="Form__input" type="search" name="search" id="" placeholder="Busca series, peliculas o categorias">
+            </form>
+
+            <div class="List">
+                <div class="List__header">
+                    <h4 class="List__title h4">Explora las categorias</h4>
+                </div>
+
+                <div class="List__container List__container--categorys">
+                    <div class="Card Card--category">
+                        <a href="#" class="Card__imagecontainer">
+                            <img class="Card__image--category" src="img/category-1.jpg" alt="">
+                            <div class="Card__mask Card__mask--category">
+                                <p class="Card__categoryname">Shonen</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="Card Card--category">
+                        <a href="#" class="Card__imagecontainer">
+                            <img class="Card__image--category" src="img/category-2.jpg" alt="">
+                            <div class="Card__mask Card__mask--category">
+                                <p class="Card__categoryname">Seinen</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="Card Card--category">
+                        <a href="#" class="Card__imagecontainer">
+                            <img class="Card__image--category" src="img/category-3.jpg" alt="">
+                            <div class="Card__mask Card__mask--category">
+                                <p class="Card__categoryname">Shoujo</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="Card Card--category">
+                        <a href="#" class="Card__imagecontainer">
+                            <img class="Card__image--category" src="img/category-4.jpg" alt="">
+                            <div class="Card__mask Card__mask--category">
+                                <p class="Card__categoryname">Josei</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="Card Card--category">
+                        <a href="#" class="Card__imagecontainer">
+                            <img class="Card__image--category" src="img/category-5.jpg" alt="">
+                            <div class="Card__mask Card__mask--category">
+                                <p class="Card__categoryname">Kodomomuke</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="Footer">
+        <div class="Footer__container l-container">
+            <!-- <div class="Footer__socials">
+                <span></span>
+            </div> -->
+            <div class="Footer__right">
+                <p class="Footer__copy">Ellation, LLC. Todos los derechos reservados</p>
+                <nav class="Footer__nav">
+                    <a href="#" class="Footer__navitem">Acerca de Crunchiroll</a>
+                    <a href="#" class="Footer__navitem">Ayuda</a>
+                    <a href="#" class="Footer__navitem">Terminos</a>
+                    <a href="#" class="Footer__navitem">Privacidad</a>
+                    <a href="#" class="Footer__navitem">Nuestras Aplicaciones</a>
+                </nav>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

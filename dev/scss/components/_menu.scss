@@ -5,6 +5,7 @@
     width: 100%;
     background-color: $fondofirst;
     color: $tipografiaGray;
+    z-index: 1;
     @include from(medium){
         position: static;
         background: none;
@@ -40,6 +41,10 @@
             margin-left: 2rem;
             flex: initial;
             opacity: .6;
+
+            &:hover {
+                opacity: .8;
+            }
         }
         
     }
