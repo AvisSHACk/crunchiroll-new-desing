@@ -64,6 +64,7 @@
         }
 
         @include from(large) {
+            width: 40%;
             position: static;
             transform: translateY(10%) translateX(0);
         }
@@ -74,19 +75,21 @@
     }
 
     &__containertitle {
-        width: 30%;
+        display:flex;
+        max-height:150px;
+        max-width:100%;
     }
 
     &__title {
-        // width: auto;
-        width: 100%;
+        max-height:100%;
+        width:auto;
         margin: auto;
         // height: 150px;
         filter:invert(1);
 
         @include from(large) {
-            margin-left: 0;
-            margin-bottom: 2.5rem;
+            margin: 0;
+            // margin-bottom: 2.5rem;
         }
     }
 
@@ -105,7 +108,6 @@
 
     &__description {
         display: none;
-        width: 40%;
         @include from(large) {
             display: block;
             margin-bottom: 2.5rem;
@@ -121,8 +123,8 @@
 
         @include from(large) {
             justify-content: flex-start;
-            margin-top: 0;
-            margin-bottom: 2.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
     }
     
